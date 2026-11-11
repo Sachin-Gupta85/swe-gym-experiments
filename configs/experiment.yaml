@@ -1,0 +1,15 @@
+# Experiment config for selecting SWE-Gym instances
+
+dataset: SWE-Gym/SWE-Gym
+split: train
+
+# leave empty to include every repo
+repos: []
+exclude_repos: []
+
+# keep tasks small enough to iterate on quickly
+max_patch_lines: 60       # added + removed lines in the gold patch
+max_fail_to_pass: 5       # number of tests that must flip to passing
+
+limit: 50
+seed: 0
